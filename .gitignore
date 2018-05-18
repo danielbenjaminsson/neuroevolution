@@ -1,0 +1,6 @@
+# Ignore 'old' erlang code
+/erl
+
+# Ignore MacOS stuff
+.DS_Store
+
