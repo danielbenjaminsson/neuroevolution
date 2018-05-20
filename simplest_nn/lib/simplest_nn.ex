@@ -47,7 +47,10 @@ defmodule SimplestNn do
     end
   end
 
-  # If needed, more info at: https://en.wikipedia.org/wiki/Dot_product
+  @doc """
+  Calculates the dot product of two vectors.
+  More info at: https://en.wikipedia.org/wiki/Dot_product
+  """
   def dot_product([i | inputs], [w | weights], acc) do
     dot_product(inputs, weights, i * w + acc)
   end
