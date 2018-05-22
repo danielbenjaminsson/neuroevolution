@@ -4,7 +4,7 @@
 version: 2
 jobs:
   build:
-    parallelism: 4  # run only 1 instance
+    parallelism: 4  # use 4 cores when building
     docker:
       - image: circleci/elixir:1.6.4
     working_directory: ~/repo/simplest_nn
