@@ -13,7 +13,8 @@ jobs:
     steps:
       - checkout
       - run: cd simplest_nn
-      - run: mix local.hex --force && mix local.rebar --force
-      - run: mix deps.get --only test
-      - run: mix test
-      - run: mix format --check-formatted
+      - run: pwd
+      #- run: mix local.hex --force && mix local.rebar --force
+      #- run: mix deps.get --only test
+      #- run: mix test
+      #- run: mix format --check-formatted
