@@ -7,16 +7,13 @@ jobs:
     parallelism: 1  # run only 1 instance
     docker:
       - image: circleci/elixir:1.6.4
-    working_directory: ~/repo
+    working_directory: ~/repo/simplest_nn
     environment:
       MIX_ENV: test
     steps:
       - checkout:
-        path: ~/repo/simplest_nn
-      - run: cd simplest_nn
-      - run: pwd
-      - run: ls -lha
-      - run: mix local.hex --force && mix local.rebar --force
+        path: ~/repo
+      #- run: mix local.hex --force && mix local.rebar --force
       - run: mix deps.get --only test
       - run: mix test
       - run: mix format --check-formatted
