@@ -4,6 +4,7 @@
 version: 2
 jobs:
   build:
+    parallelism: 1  # run only 1 instance
     docker:
       - image: circleci/elixir:1.6.4
     working_directory: ~/repo
@@ -11,6 +12,7 @@ jobs:
       MIX_ENV: test
     steps:
       - checkout
+      - run: cd simplest_nn
       - run: mix local.hex --force && mix local.rebar --force
       - run: mix deps.get --only test
       - run: mix test
