@@ -14,6 +14,7 @@ jobs:
       - checkout
       - run: cd simplest_nn
       - run: pwd
+      - run: ls -lha
       #- run: mix local.hex --force && mix local.rebar --force
       #- run: mix deps.get --only test
       #- run: mix test
