@@ -11,11 +11,12 @@ jobs:
     environment:
       MIX_ENV: test
     steps:
-      - checkout
+      - checkout:
+        path: ~/repo/simplest_nn
       - run: cd simplest_nn
       - run: pwd
       - run: ls -lha
-      #- run: mix local.hex --force && mix local.rebar --force
-      #- run: mix deps.get --only test
-      #- run: mix test
-      #- run: mix format --check-formatted
+      - run: mix local.hex --force && mix local.rebar --force
+      - run: mix deps.get --only test
+      - run: mix test
+      - run: mix format --check-formatted
