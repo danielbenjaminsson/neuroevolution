@@ -7,7 +7,6 @@ defmodule SimpleNeuronTest do
   end
 
   test "send data to neurons" do
-    assert SimpleNeuron.sense([1,2]) == :ok
+    assert SimpleNeuron.sense([1, 2]) == :ok
   end
-
 end

@@ -5,8 +5,11 @@
 		}
 	],
 	"settings": {
-		"elixirLS.enableDialyzer": false,
-		"elixir.projectPath": "./simple_neuron",
-		"elixir.projectPath": "./simplest_nn"
+		"elixir.projectPath": "simple_neuron",
+		"elixir.projectPath": "simplest_nn",
+		"elixir.projectPath": "basic_ann",
+		"elixirLS.projectDir": "simple_neuron",
+		"elixirLS.projectDir": "simplest_nn",
+		"elixirLS.projectDir": "basic_ann",
 	}
 }
