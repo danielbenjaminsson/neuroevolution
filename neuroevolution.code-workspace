@@ -5,45 +5,11 @@
 		}
 	],
 	"settings": {
-<<<<<<< HEAD
 		"elixir.projectPath": "simple_neuron",
 		"elixir.projectPath": "simplest_nn",
 		"elixir.projectPath": "basic_ann",
 		"elixirLS.projectDir": "simple_neuron",
 		"elixirLS.projectDir": "simplest_nn",
 		"elixirLS.projectDir": "basic_ann",
-=======
-		"elixirLS.projectDir": "./simple_neuron/",
-		"elixirLS.dialyzerEnabled": true,
-		"cSpell.enabledLanguageIds": [
-			"asciidoc",
-			"c",
-			"cpp",
-			"csharp",
-			"css",
-			"elixir",
-			"go",
-			"handlebars",
-			"html",
-			"jade",
-			"javascript",
-			"javascriptreact",
-			"json",
-			"latex",
-			"less",
-			"markdown",
-			"php",
-			"plaintext",
-			"pub",
-			"python",
-			"restructuredtext",
-			"rust",
-			"scss",
-			"text",
-			"typescript",
-			"typescriptreact",
-			"yml"
-		],
->>>>>>> 6df7c32ad36c37592379d5cf574080da7c542c5b
 	}
 }
