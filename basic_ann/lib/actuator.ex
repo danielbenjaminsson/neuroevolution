@@ -2,10 +2,10 @@ defmodule Actuator do
   require Records
 
   def gen(exoself_pid, node) do
-    spawn(node, __MODULE_, :prep, [exoself_pid])
+    spawn(node, __MODULE__, :prep, [exoself_pid])
   end
 
-  def prep(exoself_pid, nide) do
+  def prep(exoself_pid, node) do
     receive do
       {exoself_pid, {id, cx_pid, scape, actuator_name, fanin_pids}} ->
         loop(id, exoself_pid, cx_pid, scape, actuator_name, {fanin_pids, fanin_pids}, [])
